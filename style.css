@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+.jejumyeongjo * { 
+    font-family: 'Jeju Myeongjo', serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: #FAFCFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#top-bar {
+    width: 100%;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.image {position:absolute;}
+    .logo {
+        width: 450px;
+        bottom: 0px;
+        top: 14px;
+        left: 400px;
+    }
+    .image.card-image {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+/*devide line*/
+.survey {
+    display: flex;
+    justify-content: center;
+}
+    .survey-items.renderer {
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 300px;
+    }   
+    .survey-items.container {
+        flex-wrap: wrap;
+        justify-content : flex-start;
+        display: flex;
+        max-width: 1600px;
+    }
+/*devide line*/
+.box {
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.14);
+}
+    .box.card-item {
+        width: 280px;
+        height: 360px;
+        margin: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.14);
+        border-radius: 10px;
+    }
+    
+/*devide line*/
+.text{
+    font-family: Pretendard-Regular;
+}
+    .text.nickname {
+        font-size: 2em;
+        position:absolute;
+        right: 50px;
+    }
+    .text.survey-list-text-renderer {
+        display: flex;
+        justify-content: start;
+        width: 1600px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .text.survey-list-text{
+        color: #009640;
+        position: absolute;
+    }
+
+    .text.survey-list-align-text {
+        color: black;
+        font-size: 1em;
+        margin-top: 30px;
+        margin-left: 170px;
+    }
+    .text.new-item {
+        color: #D9E9CD;
+        width: 74px;
+        margin-left: 103px;
+        margin-right: 103px;
+    }
+    .text.item-title {
+        font-family: Jeju Myungjo;
+    }
+/*devide line*/
+.line {
+    position:absolute;
+    width:800px;
+}
+    
+.icon {position:static;}
+    .icon.view-arrow {
+        width: 11px;
+        margin-left: 5px;
+    }
+    .icon.profile {
+        position:absolute;
+        width: 60px;
+        height: 60px;
+        top: 20px;
+        left: 10px;
+    }
+    .icon.add-image {
+        width: 100px;
+        height: 100px;
+    }
+    .icon.add-new-item {
+        width: 200px;
+        height: 200px;
+        filter: invert(94%) sepia(26%) saturate(191%) hue-rotate(35deg) brightness(94%) contrast(94%);
+        margin-top: 55px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 5px;
+    }
+/*devide line*/
+.profile-renderer {
+    position:absolute;
+    right:500px;
+}
