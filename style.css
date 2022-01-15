@@ -4,10 +4,11 @@
     font-weight: 400;
     font-style: normal;
 }
-@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
-
-.jejumyeongjo * { 
-    font-family: 'Jeju Myeongjo', serif;
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
 }
 
 html, body {
@@ -29,9 +30,7 @@ html, body {
     height: 100px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
-    left: 0px;
-    right: 0px;
-    top: 0px;
+    position: fixed;
 }
 
 .image {position:absolute;}
@@ -77,6 +76,14 @@ html, body {
     }
     
 /*devide line*/
+.survey-list-text-renderer {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    width: 1600px;
+    height: 100px;
+    top: 200px;
+}
 .text{
     font-family: Pretendard-Regular;
 }
@@ -84,13 +91,6 @@ html, body {
         font-size: 2em;
         position:absolute;
         right: 50px;
-    }
-    .text.survey-list-text-renderer {
-        display: flex;
-        justify-content: start;
-        width: 1600px;
-        height: 100px;
-        margin-top: 100px;
     }
     .text.survey-list-text{
         color: #009640;
@@ -103,15 +103,33 @@ html, body {
         margin-top: 30px;
         margin-left: 170px;
     }
-    .text.new-item {
-        color: #D9E9CD;
-        width: 74px;
-        margin-left: 103px;
-        margin-right: 103px;
+    .text.card {
+        position:relative;
+        text-align: center;
     }
-    .text.item-title {
-        font-family: Jeju Myungjo;
-    }
+        .text.card.new-item {
+            color: #D9E9CD;
+            width: 74px;
+            margin-left: 103px;
+            margin-right: 103px;
+        }
+        .text.card.survey-title {
+            font-family: Chosunilbo_myungjo;
+            top: 200px;
+            font-size: 1.5em;
+            margin-top: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .text.card.survey-respondents {
+            position: absolute;
+            font-family: Chosunilbo_myungjo;
+            font-size: 1em;
+            color: #3D3D3D;
+            top: 250px;
+            width: 100%;            
+        }
 /*devide line*/
 .line {
     position:absolute;
@@ -147,4 +165,8 @@ html, body {
 .profile-renderer {
     position:absolute;
     right:500px;
+}
+.card-text-container {
+    height:0px;
+    position: relative;
 }
