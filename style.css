@@ -161,11 +161,23 @@ html, body {
         margin-top: 0px;
         margin-bottom: 0px;
     }
+    .text.sign-up-button-text {
+        color:#FFFFFF;
+        font-size: 1.5em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     .text.sign-up-link {
         font-size: 1em;
         width: 125px;
         position: relative;
         bottom: 20px;
+    }
+    .text.login-link {
+        font-size: 1em;
+        width: 125px;
+        position: relative;
+        color: #009640;
     }
     /*divide line*/
     .text.input-text {
@@ -177,6 +189,9 @@ html, body {
         .text.input-text.password-text {
             margin: 0px;
         }
+        .text.input-text.password-check-text {
+            margin: 0px;
+        }
     /*divide line*/
     .text.welcome-message1 {
         position: relative;
@@ -184,7 +199,12 @@ html, body {
     .text.welcome-message2 {
         position: relative;
     }
-    
+    .text.login-ask {
+        display: block;
+        position: absolute;
+        top: 100px;
+    }
+
 /*divide line*/
 .line {
     position:absolute;
@@ -278,7 +298,10 @@ html, body {
     bottom: 18px;
     height: 24px;
 }
-/*login page style start*/
+/*sign-up page style start*/
+#sign-up-page {
+    background-color: #ffffff;
+}
 #login-page {
     background-color: #ffffff;
 }
@@ -314,8 +337,28 @@ button {
         height:55px;
         left: 105px;
     }
-
+    
     .login-button:active {
+        background-color:#454545;
+    }
+    
+    .sign-up-button{
+        background: #000000;
+        border-radius: 8px;
+        border-left-width: 0px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        margin-top: 10px;
+        width: 420px;
+        height:55px;
+    }
+
+    .sign-up-button:active {
         background-color:#454545;
     }
 /* divide line */
@@ -331,13 +374,32 @@ button {
     align-items: center;
     justify-content: center;
 }
+.sign-up-components-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
 .login-components-renderer {
     display: flex;
     justify-content: center;
 }
+.sign-up-components-renderer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
 .login-components {
+  width: auto;
+  /* Whatever width you want */
+}
+.sign-up-components {
   width: auto;
   /* Whatever width you want */
 }

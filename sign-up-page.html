@@ -10,27 +10,31 @@
 <body>
     <div class="background" id="sign-up-page">
         <div class="sign-up-components-container">
-            <div class="sign-up-components-renderer">
-                <div class="sign-up-components">
-                    <div class="inputs-container">
-                        <div class="email-input-renderer">
-                            <p class="text input-text email-text">이메일 주소</p>
-                            <input class="email-input">
+            <div>
+                <div class="text login-ask">
+                    이미 가입된 계정이 있으신가요?
+                    <a href="login-page.html" class="text login-link">로그인</a>
+                </div>
+                <div class="sign-up-components-renderer">
+                    <div class="sign-up-components">
+                        <div class="inputs-container">
+                            <div class="email-input-renderer">
+                                <p class="text input-text email-text">이메일 주소</p>
+                                <input class="email-input">
+                            </div>
+                            <div class="password-input-renderer">
+                                <p class="text input-text password-text">비밀번호</p>
+                                <input type="password" class="password-input">
+                            </div>
+                            <div class="password-check-input-renderer">
+                                <p class="text input-text password-check-text">비밀번호 확인</p>
+                                <input type="password" class="password-check-input">
+                            </div>
                         </div>
-                        <div class="password-input-renderer">
-                            <p class="text input-text password-text">비밀번호</p>
-                            <input type="password" class="password-input">
-                        </div>
-                        <div class="password-check-input-renderer">
-                            <p class="text input-text password-check-text">비밀번호 확인</p>
-                            <input type="password" class="password-check-input">
-                        </div>
+                        <button class="sign-up-button">
+                            <p class="text sign-up-button-text">계정 생성하기</p>
+                        </button>
                     </div>
-                    <p class="text login-ask">이미 가입된 계정이 있으신가요?</p>
-                    <a href="sign-up-page.html" class="text sign-up-link">로그인</a>
-                    <button class="sign-up-button">
-                        <p class="text sign-up-button-text">계정 생성하기</p>
-                    </button>
                 </div>
             </div>
         </div>
