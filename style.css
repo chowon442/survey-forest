@@ -91,6 +91,7 @@ html, body {
     }
     .box.card-item:hover {
         box-shadow: 0px 40px 30px rgba(0,0,0,0.14);
+        cursor: pointer;
     }
 
 /*divide line*/
@@ -215,6 +216,7 @@ html, body {
     .icon.view-arrow {
         width: 11px;
         margin-left: 5px;
+        cursor: pointer;
     }
     .icon.profile {
         position:relative;
@@ -302,6 +304,8 @@ html, body {
 #sign-up-page {
     background-color: #ffffff;
 }
+
+
 #login-page {
     background-color: #ffffff;
 }
