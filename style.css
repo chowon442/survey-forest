@@ -91,7 +91,6 @@ html, body {
     }
     .box.card-item:hover {
         box-shadow: 0px 40px 30px rgba(0,0,0,0.14);
-        cursor: pointer;
     }
 
 /*divide line*/
@@ -154,6 +153,9 @@ html, body {
             color: #3D3D3D;
             top: 250px;
             width: 100%;            
+        }
+        #new-survey:hover {
+            cursor: pointer;
         }
     /*divide line*/
     .text.login-button-text {
@@ -240,18 +242,18 @@ html, body {
     }
     .icon.share-survey {
         position:relative;
-        margin-left: 10px;
-        margin-right: 10px;
+        right: 8px;
+        bottom: 1px;
     }
     .icon.edit-survey {
         position:relative;
-        margin-left: 10px;
-        margin-right: 10px;
+        right: 4px;
+        bottom: 1px;
     }
     .icon.delete-survey {
         position:relative;
-        margin-left: 10px;
-        margin-right: 10px;
+        right: 6px;
+        bottom: 1px;
     }
     .icon.survey-info {
         position:relative;
@@ -365,6 +367,67 @@ button {
 
     .sign-up-button:active {
         background-color:#454545;
+    }
+
+    .share-btn {
+        position:relative;
+        width:34px;
+        height:34px;
+        border-radius: 17px;
+        background: #FFFFFF;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .edit-btn {
+        position: relative;
+        width:34px;
+        height:34px;
+        border-radius: 17px;
+        background: #FFFFFF;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .delete-btn {
+        position: relative;
+        width:34px;
+        height:34px;
+        border-radius: 17px;
+        background: #FFFFFF;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .share-btn:hover {
+        background: #F3F1F1;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.05);
+    }
+    .edit-btn:hover {
+        background: #F3F1F1;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.05);
+    }
+    .delete-btn:hover {
+        background: #F3F1F1;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.05);
+    }
+    .share-btn:active {
+        box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.25);
+    }
+    .edit-btn:active {
+        box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.25);
+    }
+    .delete-btn:active {
+        box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.25);
     }
 /* divide line */
 
